@@ -11,6 +11,7 @@ const movieDisplay = ({movie}) => {
                 <h3>{movie.Year}</h3>
                 <h2>{movie.Actors}</h2>
                 <h3>{movie.Plot}</h3>
+                <h3>Productions brought to you by: {movie.Production}</h3>
             </>
         )
     }
@@ -23,7 +24,7 @@ const movieDisplay = ({movie}) => {
         return loaded()
     } else{
         return loading()
-    }
+    } 
 };
 
 export default movieDisplay
