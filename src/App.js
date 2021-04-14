@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect } from "react";
+import Form from "./components/form.js";
+import MovieDisplay from "./components/movieDisplay.js"
 
 function App() {
-  return (
+
+  const apiKey = "d0021166"
+  const [movie, setMovie] = React.useState(null)
+  const getMovie = async (searchTerm) => {
+    const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`)
+    console.log("response:" , response)
+    const data = await response.json()
+    console.log("data:" , data)
+    setMovie(data)
+  }
+
+  useEffect(() => {
+    const randMovies = [
+      "The Fifth Element",
+      "Mad Max: Fury Road",
+      "Inglorious Bastards",
+      "Avatar"
+    ]
+
+    const randomIndex = Math.floor(Math.random() * randMovies.length)
+
+    getMovie(randMovies[randomIndex])
+  }, [])
+
+return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form movieSearch={getMovie} />
+      <MovieDisplay movie={movie} />
     </div>
   );
 }
