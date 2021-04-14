@@ -1,8 +1,21 @@
 .App {
   text-align: center;
+  background-color: honeydew;
 }
 
 .navBar {
-  background-color: blue;
   margin: 0;
+  background-color: seagreen;
+}
+
+
+
+
+
+
+
+
+.footerBar {
+  margin: 0;
+  background-color: seagreen;
 }
