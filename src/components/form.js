@@ -18,15 +18,20 @@ const Form = (props) => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} autoComplete="on">
+                <br />
+                Let's find your movie
+                <br />
+                <br />
                 <input
+                    className ="inputBar"
                     placeholder="Search Here!"
                     type="text"
                     name="searchTerm"
                     value={formData.searchTerm}
                     onChange={handleChange}
                 />
-                <input type="submit" value="submit" />
+                <input className="submitButton" type="submit" value="submit" />
             </form>
         </div>
     );

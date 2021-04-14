@@ -27,7 +27,6 @@ function App() {
     ]
 
     const randomIndex = Math.floor(Math.random() * randMovies.length)
-
     getMovie(randMovies[randomIndex])
   }, [])
 
