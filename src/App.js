@@ -1,7 +1,10 @@
 import './App.css';
 import React, { useEffect } from "react";
+import { Route, Switch } from "react-router-dom";
+import Nav from "./components/nav.js";
 import Form from "./components/form.js";
-import MovieDisplay from "./components/movieDisplay.js"
+import MovieDisplay from "./components/movieDisplay.js";
+import Footer from "./pages/footer.js"
 
 function App() {
 
@@ -30,8 +33,10 @@ function App() {
 
 return (
     <div className="App">
+      <Nav />
       <Form movieSearch={getMovie} />
       <MovieDisplay movie={movie} />
+      <Footer />
     </div>
   );
 }

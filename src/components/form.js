@@ -7,7 +7,7 @@ const Form = (props) => {
     });
 
     const handleChange = (event) => {
-        // console.log("event:" , event)
+        console.log("event:" , event)
         setFormData({ ...formData, [event.target.name]: event.target.value });
     };
 
