@@ -20,6 +20,7 @@ const Form = (props) => {
         <div>
             <form onSubmit={handleSubmit}>
                 <input
+                    placeholder="Search Here!"
                     type="text"
                     name="searchTerm"
                     value={formData.searchTerm}
