@@ -6,6 +6,7 @@
 .navBar {
   margin: 0;
   background-color: seagreen;
+  color: white;
 }
 
 .inputBar {
@@ -25,4 +26,10 @@
 .footerBar {
   margin: 0;
   background-color: seagreen;
+  color: white;
+}
+
+#footLink {
+  text-decoration: none;
+  color: white;
 }

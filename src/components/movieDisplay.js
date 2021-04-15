@@ -6,12 +6,12 @@ const movieDisplay = ({movie}) => {
         return (
             <>
                 <h1>{movie.Title}</h1>
-                <h3>{movie.Genre}</h3>
+                <h4>{movie.Genre}</h4>
                 <img src={movie.Poster} alt={movie.Title} />
                 <h3>{movie.Year}</h3>
                 <h2>{movie.Actors}</h2>
-                <h3>{movie.Plot}</h3>
-                <h3>Productions brought to you by: {movie.Production}</h3>
+                <p>{movie.Plot}</p>
+                <h4>Productions brought to you by: {movie.Production}</h4>
             </>
         )
     }
