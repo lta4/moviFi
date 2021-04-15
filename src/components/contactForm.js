@@ -8,7 +8,7 @@ function ContactForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="contactForm">
             <input
                 id="firstname"
                 type="firstname"
@@ -45,6 +45,7 @@ function ContactForm() {
             <textarea
                 id="message"
                 name="message"
+                placeholder="Drop a note!"
             />
             <ValidationError
                 prefix="Message"
