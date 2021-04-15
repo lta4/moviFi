@@ -9,13 +9,33 @@ function ContactForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="email">
-                Email Address
-            </label>
+            <input
+                id="firstname"
+                type="firstname"
+                name="firstname"
+                placeholder="First Name"
+            />
+            <ValidationError
+                prefix="First Name"
+                field="firstname"
+                errors={state.errors}
+            />
+            <input
+                id="lastname"
+                type="lastname"
+                name="lastname"
+                placeholder="Last Name"
+            />
+            <ValidationError
+                prefix="Last Name"
+                field="lastname"
+                errors={state.errors}
+            />
             <input
                 id="email"
                 type="email"
                 name="email"
+                placeholder="Email Address"
             />
             <ValidationError
                 prefix="Email"

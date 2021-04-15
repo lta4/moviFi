@@ -6,7 +6,6 @@ import Form from "./components/form.js";
 import MovieDisplay from "./components/movieDisplay.js";
 import Footer from "./pages/footer.js";
 import ContactForm from "./components/contactForm.js"
-// import { useForm, ValidationError } from "@formspree/react";
 
 function App() {
 
