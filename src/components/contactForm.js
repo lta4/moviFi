@@ -4,7 +4,7 @@ import React from "react";
 function ContactForm() {
     const [state, handleSubmit] = useForm("xayanyye");
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>
+        return <p>Thanks for reaching out!</p>
     }
 
     return (
