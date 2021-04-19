@@ -28,6 +28,14 @@
   row-gap: 4px;
 }
 
+input#firstname, #lastname, #email {
+  padding: 5px 0 5px 0;
+}
+
+textarea#message {
+  padding: 5px 0 40px 0;
+}
+
 .footerBar {
   margin: 0;
   background-color: seagreen;
