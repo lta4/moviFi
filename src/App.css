@@ -1,3 +1,10 @@
+/* * {
+  padding: 2;
+  margin: 4;
+  box-sizing: border-box;
+  outline: 2px solid blue;
+} */
+
 .App {
   text-align: center;
   background-color: honeydew;
@@ -19,8 +26,10 @@
   height: 26px;
 }
 
-
-
+.detailContainer {
+  /* box-sizing: border-box;
+  outline: 2px solid red; */
+}
 
 .contactForm {
   display: grid;

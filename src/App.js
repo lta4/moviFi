@@ -5,7 +5,8 @@ import Nav from "./components/nav.js";
 import Form from "./components/form.js";
 import MovieDisplay from "./components/movieDisplay.js";
 import Footer from "./pages/footer.js";
-import ContactForm from "./components/contactForm.js"
+import ContactForm from "./components/contactForm.js";
+import Fav from "./components/fav.js";
 
 function App() {
 
@@ -34,6 +35,11 @@ function App() {
 return (
     <div className="App">
       <Nav />
+      <Switch>
+        <Route path="/fav">
+          <Fav className="favRoute" />
+        </Route>
+      </Switch>
       <Form movieSearch={getMovie} />
       <MovieDisplay movie={movie} />
       <ContactForm />
