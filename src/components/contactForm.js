@@ -13,7 +13,7 @@ function ContactForm() {
                 id="firstname"
                 type="firstname"
                 name="firstname"
-                placeholder="First Name"
+                placeholder=" First Name"
             />
             <ValidationError
                 prefix="First Name"
@@ -24,7 +24,7 @@ function ContactForm() {
                 id="lastname"
                 type="lastname"
                 name="lastname"
-                placeholder="Last Name"
+                placeholder=" Last Name"
             />
             <ValidationError
                 prefix="Last Name"
@@ -35,7 +35,7 @@ function ContactForm() {
                 id="email"
                 type="email"
                 name="email"
-                placeholder="Email Address"
+                placeholder=" Email Address"
             />
             <ValidationError
                 prefix="Email"
@@ -45,7 +45,7 @@ function ContactForm() {
             <textarea
                 id="message"
                 name="message"
-                placeholder="Drop a note!"
+                placeholder=" Drop a note!"
             />
             <ValidationError
                 prefix="Message"
