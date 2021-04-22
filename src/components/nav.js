@@ -8,7 +8,7 @@ const Nav = (props) => {
                 <h1 className="title">MoviFi</h1>
             </Link>
             <Link to="/fav">
-                <div className="fav">Fav</div>
+                <div className="favLink">Fav</div>
             </Link>
         </div>
     );

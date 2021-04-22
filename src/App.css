@@ -10,17 +10,22 @@
   background-color: honeydew;
 }
 
-.navBar {
+.navBar a{
   display: grid;
   grid-column: 1 / 3;
   grid-row: 1 / 5;
   background-color: seagreen;
+  text-decoration: none;
 }
 
 .title {
   margin: 0;
   color: white;
   font-size: 40px;
+}
+
+.favLink {
+  color: white;
 }
 
 .inputBar {
