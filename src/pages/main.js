@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Form from "../components/form.js";
-import MovieDisplay from "../components/movieDisplay.js";
-import ContactForm from "../components/contactForm.js";
+import Form from "../components/form";
+import MovieDisplay from "../components/movieDisplay";
+import ContactForm from "../components/contactForm";
 
 const Main = (props) => {
 
