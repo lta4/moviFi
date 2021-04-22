@@ -1,5 +1,6 @@
-import './App.css';
-import React from "react";
+import "./App.css";
+import "./Login.css";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Main from "./pages/main"
 import Nav from "./components/nav";
@@ -7,13 +8,18 @@ import Footer from "./pages/footer";
 import Fav from "./pages/fav";
 import Dashboard from "./components/dashboard";
 import Preferences from "./components/preferences";
+import Login from "./components/login";
 
 function App() {
+  const [token, setToken] = useState();
 
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
   return (
+    <div className="wrapper">
       <div className="App">
         <Nav />
-        <BrowserRouter>
         <Switch>
           <Route path="/dashboard">
             <Dashboard className="dashboardRoute"/>
@@ -28,9 +34,9 @@ function App() {
             <Main className="mainRoute" />
           </Route>
         </Switch>
-        </BrowserRouter>
         <Footer />
       </div>
+    </div>
   );
 };
 

@@ -10,6 +10,10 @@
   background-color: honeydew;
 }
 
+.wrapper {
+  padding: 20px;
+}
+
 .navBar a{
   display: grid;
   grid-column: 1 / 3;
