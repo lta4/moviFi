@@ -1,13 +1,12 @@
 html, body {
     position: relative;
     min-height: 100vh;
-    background-color: green;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(to top,#F0F2F0, #000C40);
 }
 
 .login-wrapper {
-    /* height: 100vh; */
     height: 550px;
     width: 350px;
     border-radius: 15px;
@@ -15,8 +14,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: darkred;
+    /* justify-content: center; */
+    background-color: whitesmoke;
 }
 
 .submit-wrapper {
