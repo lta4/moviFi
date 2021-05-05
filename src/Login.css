@@ -1,9 +1,22 @@
+html, body {
+    position: relative;
+    min-height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
 .login-wrapper {
-    height: 100vh;
+    /* height: 100vh; */
+    height: 550px;
+    width: 350px;
+    border-radius: 15px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: honeydew;
+    justify-content: center;
+    background-color: darkred;
 }
 
 .submit-wrapper {

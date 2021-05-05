@@ -20,7 +20,17 @@ const Main = (props) => {
         "The Fifth Element",
         "Mad Max: Fury Road",
         "Inglorious Bastards",
-        "Avatar"
+        "Avatar",
+        "Rush Hour",
+        "Rush Hour 2",
+        "Rush Hour 3",
+        "Jaws",
+        "Jaws 2",
+        "Jaws 3",
+        "Twilight",
+        "Broke Back Mountain",
+        "Divergent",
+        "The Avengers",
       ]
   
       const randomIndex = Math.floor(Math.random() * randMovies.length)
