@@ -9,6 +9,7 @@ html, body {
 .login-wrapper {
     height: 550px;
     width: 350px;
+    margin-top: 4rem;
     border-radius: 15px;
     position: relative;
     display: flex;
@@ -16,6 +17,12 @@ html, body {
     align-items: center;
     /* justify-content: center; */
     background-color: whitesmoke;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.4em;
 }
 
 .submit-wrapper {
