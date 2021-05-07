@@ -25,6 +25,10 @@ html, body {
     line-height: 2.4em;
 }
 
+#username, #password{
+    font-size: 19px;
+}
+
 .submit-wrapper {
     padding: 5px 0 0 0;
 }

@@ -31,10 +31,10 @@ export default function Login({setToken}) {
             <form onSubmit={handleSubmit}>
                 <div className="input-wrapper">
                     <label>
-                        <input type="text" placeholder="Type your username" id="userName" onChange={e => setUserName(e.target.value)}/>
+                        <input type="text" placeholder="Type your username" id="username" onChange={e => setUserName(e.target.value)}/>
                     </label>
                     <label>
-                        <input type="password" placeholder="Type your password" id="passwWord" onChange={e => setPassword(e.target.value)}/>
+                        <input type="password" placeholder="Type your password" id="password" onChange={e => setPassword(e.target.value)}/>
                     </label>
                 </div>
                 <div className="submit-wrapper">
