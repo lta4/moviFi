@@ -1,7 +1,7 @@
 import "./App.css";
 import "./Login.css";
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Main from "./pages/main"
 import Nav from "./components/nav";
 import Footer from "./pages/footer";
