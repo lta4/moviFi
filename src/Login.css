@@ -19,14 +19,22 @@ html, body {
     background-color: whitesmoke;
 }
 
+.login {
+    
+    margin-top: 50px;
+}
+
 .input-wrapper {
     display: flex;
     flex-direction: column;
-    line-height: 2.4em;
+    line-height: 3em;
 }
 
 #username, #password{
     font-size: 19px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
 }
 
 .submit-wrapper {
