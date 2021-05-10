@@ -7,7 +7,6 @@
 
 .App {
   text-align: center;
-  /* background-color: honeydew; */
   background-image: linear-gradient(to top,#F0F2F0, #000C40);
   color: white;
 }
@@ -16,11 +15,10 @@
   padding: 20px;
 } */
 
-.navBar a{
+.navBar a {
   display: grid;
   grid-column: 1 / 3;
   grid-row: 1 / 5;
-  background-color: seagreen;
   text-decoration: none;
 }
 
@@ -78,12 +76,11 @@ button {
 
 .footerBar {
   margin: 0;
-  background-color: seagreen;
   color: white;
   font-size: 30px;
 }
 
 #footLink {
   text-decoration: none;
-  color: white;
+  color: #000C40;
 }

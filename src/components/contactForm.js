@@ -9,6 +9,7 @@ function ContactForm() {
 
     return (
         <form onSubmit={handleSubmit} className="contactForm">
+            <h2>Feel free to reach out!</h2>
             <input
                 id="firstname"
                 type="firstname"
