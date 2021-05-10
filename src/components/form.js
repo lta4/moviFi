@@ -20,7 +20,7 @@ const Form = (props) => {
         <div>
             <form onSubmit={handleSubmit} autoComplete="on">
                 <br />
-                Let's find your movie
+                Let's find the movie your're looking for
                 <br />
                 <br />
                 <input
@@ -31,7 +31,7 @@ const Form = (props) => {
                     value={formData.searchTerm}
                     onChange={handleChange}
                 />
-                <input className="submitButton" type="submit" value="submit" />
+                <input className="submitButton" type="submit" value="Submit" />
             </form>
         </div>
     );

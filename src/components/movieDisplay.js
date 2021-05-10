@@ -5,7 +5,7 @@ const movieDisplay = ({movie}) => {
     const loaded = () => {
         return (
             <>
-                <h1>{movie.Title}</h1>
+                <h1 className="movieTitle">{movie.Title}</h1>
                 <h4>{movie.Genre}</h4>
                 <img src={movie.Poster} alt={movie.Title} />
                 <h3>{movie.Year}</h3>
