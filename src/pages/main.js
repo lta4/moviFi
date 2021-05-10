@@ -1,3 +1,4 @@
+import { Route, Link, Switch } from "react-router-dom";
 import React, { useEffect } from "react";
 import Form from "../components/form";
 import MovieDisplay from "../components/movieDisplay";
@@ -6,7 +7,7 @@ import ContactForm from "../components/contactForm";
 const Main = (props) => {
 
     const apiKey = "d0021166"
-    const [movie, setMovie] = React.useState([]);
+    const [movies, setMovies] = React.useState([]);
     const emptyMovie = {
       title: "",
       poster: "",
@@ -16,12 +17,12 @@ const Main = (props) => {
     const [selectedMovie, setSelectedMovie] = React.useState(emptyMovie);
     const [favObj, setFavObj] = React.useState(null)
     const [favoritesArr, setFavoritesArr] = React.useState([])
-    const getMovie = async (searchTerm) => {
+    const getMovies = async (searchTerm) => {
       const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`)
       console.log("response:" , response)
       const data = await response.json()
       console.log("data:" , data)
-      setMovie(data)
+      setMovies(data)
     };
 
     const addMovie = () => {
@@ -47,10 +48,10 @@ const Main = (props) => {
       setFavoritesArr([...favoritesArr])
     }
 
-    const selectMovie = (movie) => {
-      setSelectedMovie(movie);
+    const selectMovie = (movies) => {
+      setSelectedMovie(movies);
     };
-    // React.useEffect(() => getMovies(), []);
+    React.useEffect(() => getMovies(), []);
     React.useEffect(() => addMovie(), [favObj])
     
     useEffect(() => {
@@ -72,14 +73,18 @@ const Main = (props) => {
       ]
   
       const randomIndex = Math.floor(Math.random() * randMovies.length)
-      getMovie(randMovies[randomIndex])
+      getMovies(randMovies[randomIndex])
     }, [])
   
   return (
       <div className="main">
-        <Form movieSearch={getMovie} />
-        <MovieDisplay movie={movie} />
-        <ContactForm />
+        <Switch> 
+          <Form movieSearch={getMovies} />
+        <Route exact path="/" render={(rp) =>
+          <MovieDisplay changeFav = {changeFav} removeFav = {removeFav} movies={movies} />}
+        />
+          <ContactForm />
+        </Switch>
       </div>
     );
   }
