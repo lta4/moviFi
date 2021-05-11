@@ -75,16 +75,17 @@ const Main = () => {
       const randomIndex = Math.floor(Math.random() * randMovies.length)
       getMovies(randMovies[randomIndex])
     }, [])
-  
+   
   return (
       <div className="main">
         <Switch> 
-        <Route exact path = "/main/" render = {(rp) => (
-          <Form movieSearch={getMovies}{...rp} />
+        <Route exact path="/" render={(rp) => (
+          <Form movieSearch={getMovies} {...rp} />
         )}
         />
         <Route exact path="/" render={(rp) =>
-          <MovieDisplay changeFav = {changeFav} removeFav = {removeFav} favoritesArr = {favoritesArr} favObj = {favObj} setFavObj = {setFavObj} selectMovie = {selectMovie}{...rp} movies = {movies} />}
+          <MovieDisplay changeFav={changeFav} removeFav={removeFav} favoritesArr={favoritesArr} favObj={favObj} setFavObj={setFavObj} selectMovie={selectMovie} movies={movies} {...rp} />
+        }
         />
           <ContactForm />
         </Switch>
