@@ -79,11 +79,11 @@ const Main = () => {
   return (
       <div className="main">
         <Switch> 
-        <Route exact path = "/" render = {(rp) => (
+        <Route exact path = "/main/" render = {(rp) => (
           <Form movieSearch={getMovies}{...rp} />
         )}
         />
-        <Route exact path="/main/" render={(rp) =>
+        <Route exact path="/" render={(rp) =>
           <MovieDisplay changeFav = {changeFav} removeFav = {removeFav} favoritesArr = {favoritesArr} favObj = {favObj} setFavObj = {setFavObj} selectMovie = {selectMovie}{...rp} movies = {movies} />}
         />
           <ContactForm />
