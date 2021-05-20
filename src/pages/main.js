@@ -48,8 +48,8 @@ const Main = () => {
       setFavoritesArr([...favoritesArr])
     }
 
-    const selectMovie = (movies) => {
-      setSelectedMovie(movies);
+    const selectMovie = (movie) => {
+      setSelectedMovie(movie);
     };
     React.useEffect(() => getMovies(), []);
     React.useEffect(() => addMovie(), [favObj])

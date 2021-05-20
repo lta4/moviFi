@@ -15,30 +15,41 @@ const movieDisplay = (props) => {
     const loaded = () => {
         return (
             <>
-                <h1 className="movieTitle">{movies.Title}</h1>
-                <h4>{movies.Genre}</h4>
-                <img src={movies.Poster} alt={movies.Title} />
-                <h3>{movies.Year}</h3>
+                <h1 className="movieTitle">{props.movie.Title}</h1>
+                <h4>{props.movie.Genre}</h4>
+                <img src={props.movie.Poster} alt={props.movie.Title} />
+                <h3>{props.movie.Year}</h3>
                 <div className="detailContainer">
                     <button
                         onClick={() => {
-                            props.selectMovie(movies);
-                            props.history.push("/edit");
+                            props.selectMovie(props.movie);
+                            props.history.push("/");
                         }}
                     >
                         Edit Movie
                     </button>
                     <button
                         onClick={() => {
-                            props.deleteMovie(movies);
+                            props.deleteMovie(props.movie);
                         }}
                     >
                         Delete Movie
                     </button>
-                    <button onClick={(e) => handleClick2(e, movies)}>Add Movie to Favorites</button>
-                    <h2>{movies.Actors}</h2>
-                    <p>{movies.Plot}</p>
-                    <h4>Productions brought to you by: {movies.Production}</h4>
+                    <button onClick={(e) => handleClick2(e, props.movie)}>Add Movie to Favorites</button>
+                    <h2>{props.movie.Actors}</h2>
+                    <p>{props.movie.Plot}</p>
+                    <h4>Productions brought to you by: {props.movie.Production}</h4>
+                <h2>Favorites List</h2>
+                {props.favoritesArr.map((movie, index) => {
+                    return (
+                        <article>
+                            <h4>{props.movie.Genre}</h4>
+                            <img src={props.movie.Poster} alt={props.movie.Title} />
+                            <h3>{props.movie.Year}</h3>
+                            <button onClick={(e) => handleClick(e, movie)}>Remove from Favorites</button>
+                        </article>
+                    )
+                })}
                 </div>
             </>
         )
@@ -48,7 +59,7 @@ const movieDisplay = (props) => {
         return <h1>No Movie to Display! Please Try Again.</h1>
     }
 
-    if (movies){
+    if (props.movie){
         return loaded()
     } else{
         return loading()
