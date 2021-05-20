@@ -20,8 +20,11 @@ html, body {
 }
 
 .login {
-    
     margin-top: 50px;
+}
+
+.loginDetails {
+    font-size: 15px;
 }
 
 .input-wrapper {

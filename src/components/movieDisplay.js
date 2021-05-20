@@ -46,7 +46,7 @@ const movieDisplay = (props) => {
                             <h4>{props.movie.Genre}</h4>
                             <img src={props.movie.Poster} alt={props.movie.Title} />
                             <h3>{props.movie.Year}</h3>
-                            <button onClick={(e) => handleClick(e, movie)}>Remove from Favorites</button>
+                            <button onClick={(e) => handleClick(e, props.movie)}>Remove from Favorites</button>
                         </article>
                     )
                 })}
