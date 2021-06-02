@@ -1,5 +1,6 @@
 import React from "react"
 
+
 const movieDisplay = (props) => {
 
     const handleClick = (event, data) => {
