@@ -3,15 +3,15 @@ import React from "react"
 
 const movieDisplay = (props) => {
 
-    const handleClick = (event, data) => {
-        event.preventDefault()
-        props.removeFav(data);
-    };
+    // const handleClick = (event, data) => {
+    //     event.preventDefault()
+    //     props.removeFav(data);
+    // };
 
-    const handleClick2 = (event, data) => {
-        event.preventDefault()
-        props.setFavObj(data)
-    }
+    // const handleClick2 = (event, data) => {
+    //     event.preventDefault()
+    //     props.setFavObj(data)
+    // }
     const { movies } = props;
     const loaded = () => {
         return (
@@ -21,7 +21,7 @@ const movieDisplay = (props) => {
                 <img src={props.movie.Poster} alt={props.movie.Title} />
                 <h3>{props.movie.Year}</h3>
                 <div className="detailContainer">
-                    <button
+                    {/* <button
                         onClick={() => {
                             props.selectMovie(props.movie);
                             props.history.push("/");
@@ -36,7 +36,7 @@ const movieDisplay = (props) => {
                     >
                         Delete Movie
                     </button>
-                    <button onClick={(e) => handleClick2(e, props.movie)}>Add Movie to Favorites</button>
+                    <button onClick={(e) => handleClick2(e, props.movie)}>Add Movie to Favorites</button> */}
                     <h2>{props.movie.Actors}</h2>
                     <p>{props.movie.Plot}</p>
                     <h4>Productions brought to you by: {props.movie.Production}</h4>
@@ -47,7 +47,7 @@ const movieDisplay = (props) => {
                             <h4>{props.movie.Genre}</h4>
                             <img src={props.movie.Poster} alt={props.movie.Title} />
                             <h3>{props.movie.Year}</h3>
-                            <button onClick={(e) => handleClick(e, props.movie)}>Remove from Favorites</button>
+                            {/* <button onClick={(e) => handleClick(e, props.movie)}>Remove from Favorites</button> */}
                         </article>
                     )
                 })}
