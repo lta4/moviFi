@@ -6,21 +6,20 @@ const Form = (props) => {
         searchTerm: "",
     });
 
-    // const handleChange = (event) => {
-    //     console.log("event:" , event)
-    //     setFormData({ ...formData, [event.target.name]: event.target.value });
-    // };
+    const handleChange = (event) => {
+        console.log("event:" , event)
+        setFormData({ ...formData, [event.target.name]: event.target.value });
+    };
 
-    // const handleSubmit = (event) => {
-    //     event.preventDefault()
-    //     props.movieSearch(formData.searchTerm)
-    //     props.history.push("/");
-    // }
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        props.movieSearch(formData.searchTerm)
+        props.history.push("/");
+    }
 
     return (
         <div>
-            {/* <form onSubmit={handleSubmit} autoComplete="on"> */}
-            <form autoComplete="on">
+            <form onSubmit={handleSubmit} autoComplete="on">
                 <br />
                 Let's find the movie your're looking for
                 <br />
@@ -31,7 +30,7 @@ const Form = (props) => {
                     type="text"
                     name="searchTerm"
                     value={formData.searchTerm}
-                    // onChange={handleChange}
+                    onChange={handleChange}
                 />
                 <input className="submitButton" type="submit" value="Submit" />
             </form>

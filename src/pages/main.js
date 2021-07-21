@@ -7,52 +7,52 @@ import ContactForm from "../components/contactForm";
 const Main = () => {
 
     const apiKey = "d0021166"
-    const [movies, setMovies] = React.useState([]);
-    const emptyMovie = {
-      title: "",
-      poster: "",
-      year: "",
-    };
+    const [movie, setMovie] = React.useState([]);
+    // const emptyMovie = {
+    //   title: "",
+    //   poster: "",
+    //   year: "",
+    // };
 
-    const [selectedMovie, setSelectedMovie] = React.useState(emptyMovie);
-    const [favObj, setFavObj] = React.useState(null)
-    const [favoritesArr, setFavoritesArr] = React.useState([])
-    const getMovies = async (searchTerm) => {
+    // const [selectedMovie, setSelectedMovie] = React.useState(emptyMovie);
+    // const [favObj, setFavObj] = React.useState(null)
+    // const [favoritesArr, setFavoritesArr] = React.useState([])
+    const getMovie = async (searchTerm) => {
       const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`)
       console.log("response:" , response)
       const data = await response.json()
       console.log("data:" , data)
-      setMovies(data)
+      setMovie(data)
     };
 
-    const addMovie = () => {
-      if(favObj !== null) {
-        changeFav(favObj)
-      }
-    }
+    // const addMovie = () => {
+    //   if(favObj !== null) {
+    //     changeFav(favObj)
+    //   }
+    // }
 
-    const changeFav = (newFav) => {
-      if (favoritesArr === null) {
-        setFavoritesArr((newFav))
-      } else if (
-        !favoritesArr.some((fav) => { return fav.title === newFav.title})
-      ){
-        let newArray = [...favoritesArr]
-        newArray.push(newFav)
-        setFavoritesArr(newArray)
-      }
-    }
+    // const changeFav = (newFav) => {
+    //   if (favoritesArr === null) {
+    //     setFavoritesArr((newFav))
+    //   } else if (
+    //     !favoritesArr.some((fav) => { return fav.title === newFav.title})
+    //   ){
+    //     let newArray = [...favoritesArr]
+    //     newArray.push(newFav)
+    //     setFavoritesArr(newArray)
+    //   }
+    // }
 
-    const removeFav = (selectFav) => {
-      favoritesArr.splice(favoritesArr.indexOf(selectFav), 1)
-      setFavoritesArr([...favoritesArr])
-    }
+    // const removeFav = (selectFav) => {
+    //   favoritesArr.splice(favoritesArr.indexOf(selectFav), 1)
+    //   setFavoritesArr([...favoritesArr])
+    // }
 
-    const selectMovie = (movie) => {
-      setSelectedMovie(movie);
-    };
-    React.useEffect(() => getMovies(), []);
-    React.useEffect(() => addMovie(), [favObj])
+    // const selectMovie = (movie) => {
+    //   setSelectedMovie(movie);
+    // };
+    // React.useEffect(() => getMovie(), []);
+    // React.useEffect(() => addMovie(), [favObj])
     
     useEffect(() => {
       const randMovies = [
@@ -73,18 +73,18 @@ const Main = () => {
       ]
   
       const randomIndex = Math.floor(Math.random() * randMovies.length)
-      getMovies(randMovies[randomIndex])
+      getMovie(randMovies[randomIndex])
     }, [])
    
   return (
       <div className="main">
         <Switch> 
         <Route exact path="/" render={(rp) => (
-          <Form movieSearch={getMovies} {...rp} />
+          <Form movieSearch={getMovie} {...rp} />
         )}
         />
         <Route exact path="/" render={(rp) =>
-          <MovieDisplay changeFav={changeFav} removeFav={removeFav} favoritesArr={favoritesArr} favObj={favObj} setFavObj={setFavObj} selectMovie={selectMovie} movies={movies} {...rp} />
+          <MovieDisplay  movie={movie} {...rp} />
         }
         />
           <ContactForm />
@@ -94,3 +94,5 @@ const Main = () => {
   }
   
   export default Main;
+
+  // changeFav={changeFav} removeFav={removeFav} favoritesArr={favoritesArr} favObj={favObj} setFavObj={setFavObj}
