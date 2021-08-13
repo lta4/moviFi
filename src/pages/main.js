@@ -4,7 +4,7 @@ import Form from "../components/form";
 import MovieDisplay from "../components/movieDisplay";
 import ContactForm from "../components/contactForm";
 
-const Main = () => {
+const Main = (props) => {
 
     const apiKey = "d0021166"
     const [movie, setMovie] = React.useState([]);
@@ -78,21 +78,11 @@ const Main = () => {
    
   return (
       <div className="main">
-        <Switch> 
-        <Route exact path="/" render={(rp) => (
-          <Form movieSearch={getMovie} {...rp} />
-        )}
-        />
-        <Route exact path="/" render={(rp) =>
-          <MovieDisplay  movie={movie} {...rp} />
-        }
-        />
-          <ContactForm />
-        </Switch>
+        <Form movieSearch={getMovie} />
+        <MovieDisplay movie={movie} />
+        <ContactForm />
       </div>
     );
   }
   
   export default Main;
-
-  // changeFav={changeFav} removeFav={removeFav} favoritesArr={favoritesArr} favObj={favObj} setFavObj={setFavObj}

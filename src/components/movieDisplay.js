@@ -35,22 +35,11 @@ const movieDisplay = ({movie}) => {
                         }}
                     >
                         Delete Movie
-                    </button>
-                    <button onClick={(e) => handleClick2(e, props.movie)}>Add Movie to Favorites</button> */}
+                    </button> */}
+                    {/* <button onClick={(e) => handleClick2(e, props.movie)}>Add Movie to Favorites</button> */}
                     <h2>{movie.Actors}</h2>
                     <p>{movie.Plot}</p>
                     <h4>Productions brought to you by: {movie.Production}</h4>
-                {/* <h2>Favorites List</h2> */}
-                {/* {favoritesArr.map((movie, index) => { */}
-                    {/* return ( */}
-                        <article>
-                            <h4>{movie.Genre}</h4>
-                            <img src={movie.Poster} alt={movie.Title} />
-                            <h3>{movie.Year}</h3>
-                            {/* <button onClick={(e) => handleClick(e, props.movie)}>Remove from Favorites</button> */}
-                        </article>
-                    {/* ) */}
-                {/* })} */}
                 </div>
             </>
         )

@@ -14,7 +14,7 @@ const Form = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         props.movieSearch(formData.searchTerm)
-        props.history.push("/");
+        // props.history.push("/");
     }
 
     return (
