@@ -24,7 +24,9 @@ html, body {
 }
 
 .loginDetails {
-    font-size: 15px;
+    font-size: 17px;
+    margin: 20px 10px;
+    text-align: center;
 }
 
 .input-wrapper {
@@ -42,4 +44,20 @@ html, body {
 
 .submit-wrapper {
     padding: 5px 0 0 0;
+}
+
+.loginSubmit {
+
+}
+
+.loginSubmit:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
 }
