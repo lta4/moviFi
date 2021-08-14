@@ -19,10 +19,9 @@ const Form = (props) => {
     return (
         <div>
             <form onSubmit={handleSubmit} autoComplete="on">
-                <br />
-                Let's find the movie your're looking for
-                <br />
-                <br />
+                <div className="formIntro">
+                Let's find that movie your're looking for!
+                </div>
                 <input
                     className ="inputBar"
                     placeholder="Search Here!"

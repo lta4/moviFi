@@ -1,4 +1,3 @@
-import { Route, Link, Switch } from "react-router-dom";
 import React, { useEffect } from "react";
 import Form from "../components/form";
 import MovieDisplay from "../components/movieDisplay";
@@ -29,9 +28,13 @@ const Main = (props) => {
         "Jaws 2",
         "Jaws 3",
         "Twilight",
-        "Broke Back Mountain",
         "Divergent",
         "The Avengers",
+        "Blue Crush",
+        "Star Wars",
+        "Rogue One A Star Wars Story",
+        "Pokemon",
+        "Cruella"
       ]
   
       const randomIndex = Math.floor(Math.random() * randMovies.length)

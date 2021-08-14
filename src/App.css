@@ -5,15 +5,22 @@
   outline: 2px solid blue;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
   background-image: linear-gradient(to top,#F0F2F0, #000C40);
   color: white;
+  margin: 5px 10px;
 }
 
 /* .wrapper {
   padding: 20px;
 } */
+
+/*********** NAV *************/
 
 .navBar a {
   display: grid;
@@ -32,6 +39,12 @@
   color: white;
 }
 
+/********** FORM ******************/
+
+.formIntro {
+  margin: 40px 10px;
+}
+
 .inputBar {
   height: 20px;
   width: 15em;
@@ -41,6 +54,10 @@
 .submitButton {
   height: 26px;
 }
+
+/************ MOVIE DISPLAY ************/
+
+
 
 /* .movieTitle {
   font-family: monospace;
