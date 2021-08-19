@@ -34,7 +34,9 @@ const Main = (props) => {
         "Star Wars",
         "Rogue One A Star Wars Story",
         "Pokemon",
-        "Cruella"
+        "Cruella",
+        "Suicide Squad",
+        "Megladon"
       ]
   
       const randomIndex = Math.floor(Math.random() * randMovies.length)
