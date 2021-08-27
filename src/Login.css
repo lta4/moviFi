@@ -15,7 +15,6 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     background-color: whitesmoke;
 }
 
@@ -47,7 +46,7 @@ html, body {
 }
 
 .loginSubmit {
-    background-color: royalblue;
+    background-color: firebrick;
     color: white;
     border-radius: 10%;
 }
