@@ -11,7 +11,6 @@ import Dashboard from "./components/dashboard";
 import Preferences from "./components/preferences";
 import Login from "./components/login";
 import useToken from "./useToken";
-import { SocialIcon } from "react-social-icons";
 
 function App() {
 

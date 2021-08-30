@@ -91,6 +91,14 @@ button {
   margin: 0 5px 5px 5px;
 }
 
+/************** Social Icon **************/
+
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .footerBar {
   margin: 0;
   color: white;
