@@ -6,14 +6,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 
-ReactDOM.render(<SocialIcon url="https://twitter.com/jaketrent" />,
+ReactDOM.render(
   <React.StrictMode>
     <Router>
       <App />
     </Router>
   </React.StrictMode>,
-  document.getElementById.body('root')
+  document.getElementById('root')
 );
+
+ReactDOM.render(<SocialIcon url="https://linkedin.com/jaketrent" />, document.body);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
