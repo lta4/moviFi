@@ -1,10 +1,11 @@
-import { SocialIcon } from "react-social-icons";
+// import { SocialIcon } from "react-social-icons";
 
-function SocialIcon() {
-    return (
-        <div className="socialContainer">
-        </div>
-    )
-}
+// const SocialIcon = (`https://www.linkedin.com/in/andrewarias4`) => {
+//     return (
+//         <div className="socialContainer">
+//             <SocialIcon />
+//         </div>
+//     )
+// }
 
-export default SocialIcon;
+// export default SocialIcon;

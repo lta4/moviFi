@@ -95,8 +95,8 @@ button {
 
 .socialContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .footerBar {

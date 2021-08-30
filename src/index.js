@@ -21,6 +21,16 @@ ReactDOM.render(
       <App />
       <SocialIcon url="https://linkedin.com/jaketrent" 
       />
+      <SocialIcon url="https://reddit.com/jaketrent"
+      />
+      <SocialIcon url="https://instagram.com/jaketrent"
+      />
+      <SocialIcon url="https://facebook.com/
+      jaketrent"
+      />
+      <SocialIcon url="https://github.com/
+      jaketrent"
+      />
     </Router>
   </React.StrictMode>, 
   document.body
