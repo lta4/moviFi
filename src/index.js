@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,18 +19,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <App />
-      <SocialIcon url="https://linkedin.com/jaketrent" 
-      />
-      <SocialIcon url="https://reddit.com/jaketrent"
-      />
-      <SocialIcon url="https://instagram.com/jaketrent"
-      />
-      <SocialIcon url="https://facebook.com/
-      jaketrent"
-      />
-      <SocialIcon url="https://github.com/
-      jaketrent"
-      />
+      <Route path="/login">
+        <SocialIcon />
+      </Route>
     </Router>
   </React.StrictMode>, 
   document.body

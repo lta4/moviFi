@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Login.css";
 import PropTypes from "prop-types";
+import { SocialIcon } from "react-social-icons";
 
 async function loginUser(credentials) {
     return fetch("http://localhost:8080/login", {
@@ -41,6 +42,9 @@ export default function Login({setToken}) {
                 <div className="submit-wrapper">
                     <button type="submit" className="loginSubmit">Log In</button>
                 </div>
+                <SocialIcon url="https://www.linkedin.com/in/andrewarias4" />
+                <SocialIcon url="https://facebook.com/fb/jaketrent" />
+                <SocialIcon url="https://www.github.com/lta4  " />
             </form>
         </div>
     );
