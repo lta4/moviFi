@@ -44,7 +44,7 @@ export default function Login({setToken}) {
                 </div>
                 <SocialIcon url="https://www.linkedin.com/in/andrewarias4" />
                 <SocialIcon url="https://facebook.com/fb/jaketrent" />
-                <SocialIcon url="https://www.github.com/lta4  " />
+                <SocialIcon url="https://www.github.com/lta4" />
             </form>
         </div>
     );
