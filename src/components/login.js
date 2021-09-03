@@ -42,12 +42,17 @@ export default function Login({setToken}) {
                 <div className="submit-wrapper">
                     <button type="submit" className="loginSubmit">Log In</button>
                 </div>
-                <div                                 className="social-container">
+                {/* <div                                 className="social-container">
+                    <SocialIcon url="https://www.linkedin.com/in/andrewarias4/em/email" />
+                    <SocialIcon url="https://andrew4ld@gmail.com" network="email" />
+                    <SocialIcon url="https://www.github.com/lta4" />
+                </div> */}
+            </form>
+            <div                                 className="social-container">
                     <SocialIcon url="https://www.linkedin.com/in/andrewarias4/em/email" />
                     <SocialIcon url="https://andrew4ld@gmail.com" network="email" />
                     <SocialIcon url="https://www.github.com/lta4" />
                 </div>
-            </form>
         </div>
     );
 };
