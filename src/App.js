@@ -7,6 +7,8 @@ import Main from "./pages/main"
 import Nav from "./components/nav";
 import Footer from "./pages/footer";
 import Fav from "./pages/fav";
+import About from "./pages/about";
+import Review from "./pages/review";
 import Dashboard from "./components/dashboard";
 import Preferences from "./components/preferences";
 import Login from "./components/login";
@@ -32,6 +34,12 @@ function App() {
           </Route>
           <Route path="/fav">
             <Fav className="favRoute" />
+          </Route>
+          <Route path="/about">
+            <About className="aboutRoute" />
+          </Route>
+          <Route path="/review">
+            <Review className="reviewRoute" />
           </Route>
           <Route path="/">
             <Main className="mainRoute" />

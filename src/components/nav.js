@@ -10,6 +10,12 @@ const Nav = (props) => {
             <Link to="/fav">
                 <div className="favLink">Fav</div>
             </Link>
+            <Link to="/about">
+                <div className="aboutLink">About</div>
+            </Link>
+            <Link to="/review">
+                <div className="reviewLink">Review</div>
+            </Link>
         </div>
     );
 };
