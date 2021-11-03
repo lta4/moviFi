@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Login.css";
 import PropTypes from "prop-types";
 import { SocialIcon } from "react-social-icons";
+import Footer from "../pages/footer";
 
 async function loginUser(credentials) {
     return fetch("http://localhost:8080/login", {
@@ -42,17 +43,15 @@ export default function Login({setToken}) {
                 <div className="submit-wrapper">
                     <button type="submit" className="loginSubmit">Log In</button>
                 </div>
-                {/* <div                                 className="social-container">
-                    <SocialIcon url="https://www.linkedin.com/in/andrewarias4/em/email" />
-                    <SocialIcon url="https://andrew4ld@gmail.com" network="email" />
-                    <SocialIcon url="https://www.github.com/lta4" />
-                </div> */}
-            </form>
-            <div                                 className="social-container">
-                    <SocialIcon url="https://www.linkedin.com/in/andrewarias4/em/email" />
-                    <SocialIcon url="https://andrew4ld@gmail.com" network="email" />
-                    <SocialIcon url="https://www.github.com/lta4" />
+                <div                                 className="social-container">
+                    <SocialIcon url="https://www.linkedin.com/in/andrewarias4/em/email" target="_blank" />
+                    <SocialIcon url="https://andrew4ld@gmail.com" network="email" target="_blank" />
+                    <SocialIcon url="https://www.github.com/lta4" target="_blank" />
                 </div>
+            </form>
+            <div className="loginFoot">
+                <Footer />
+            </div>
         </div>
     );
 };
