@@ -1,0 +1,219 @@
+/* * {
+  padding: 2;
+  margin: 4;
+  box-sizing: border-box;
+  outline: 2px solid blue;
+} */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+// body {
+//     margin: 0;
+//     overflow: hidden;
+// }
+
+// .background {
+//     width: 100vw;
+//     height: 100vh;
+//     background: #020202;
+// }
+  
+  .App {
+    text-align: center;
+    // background-image: linear-gradient(to top,#F0F2F0, #000C40);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    margin: 5px 10px;
+  }
+  
+  /* .wrapper {
+    padding: 20px;
+  } */
+
+  /************ BACKGROUND ******************/
+
+$particleSize: 20vmin;
+$animationDuration: 6s;
+$amount: 20;
+.App span {
+   width: $particleSize;
+   height: $particleSize;
+   border-radius: $particleSize;
+   backface-visibility: hidden; 
+   position: absolute;
+   animation-name: move;
+   animation-duration: $animationDuration;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   $colors: (
+        #f5fadf,
+        #e9fc3f,
+        #f2fa80,
+   );
+   @for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+      color: nth($colors, random(length($colors)));
+      top: random(100) * 1%;
+      left: random(100) * 1%;
+      animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+      $x: if(random() > 0.5, -1, 1);
+      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+    }
+  }
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+  
+  /*********** NAV *************/
+  
+  .navBar a {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    text-decoration: none;
+  }
+  
+  .title {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .favLink {
+    color: white;
+  }
+  
+  /********** FORM ******************/
+  
+  .formIntro {
+    margin: 40px 10px;
+  }
+  
+  .inputBar {
+    height: 20px;
+    width: 15em;
+    font-family: monospace;
+  }
+  
+  .submitButton {
+    height: 26px;
+  }
+  
+  /************ MOVIE DISPLAY ************/
+  
+  
+  
+  /* .movieTitle {
+    font-family: monospace;
+  } */
+  
+  .detailContainer {
+    /* box-sizing: border-box;
+    outline: 2px solid red; */
+  }
+  
+  .contactForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    row-gap: 4px;
+  }
+  
+  input#firstname, #lastname, #email {
+    padding: 5px 0 5px 0;
+    margin: 0 5px 0 5px;
+    font-family: monospace;
+  }
+  
+  textarea#message {
+    padding: 5px 0 40px 0;
+    margin: 0 5px 0 5px;
+  }
+  
+  button {
+    padding: 5px 0 5px 0;
+    margin: 0 5px 5px 5px;
+  }
+  
+  .footerBar {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .footer {
+    display: flex;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .copyRight {
+    color: black;
+    font-size: 8px;
+  }
+  
+  .footLink {
+    text-decoration: none;
+    color: #000C40;
+  }
+
+
+// body {
+//     margin: 0;
+//     overflow: hidden;
+// }
+
+// .background {
+//     width: 100vw;
+//     height: 100vh;
+//     background: #020202;
+// }
+
+// $particleSize: 20vmin;
+// $animationDuration: 6s;
+// $amount: 20;
+// .background span {
+//    width: $particleSize;
+//    height: $particleSize;
+//    border-radius: $particleSize;
+//    backface-visibility: hidden; 
+//    position: absolute;
+//    animation-name: move;
+//    animation-duration: $animationDuration;
+//    animation-timing-function: linear;
+//    animation-iteration-count: infinite;
+//    $colors: (
+//         #f5fadf,
+//         #e9fc3f,
+//         #f2fa80,
+//    );
+//    @for $i from 1 through $amount {
+//     &:nth-child(#{$i}) {
+//       color: nth($colors, random(length($colors)));
+//       top: random(100) * 1%;
+//       left: random(100) * 1%;
+//       animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+//       animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+//       transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+//       $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+//       $x: if(random() > 0.5, -1, 1);
+//       box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+//     }
+//   }
+// }
+
+// @keyframes move {
+//     100% {
+//         transform: translate3d(0, 0, 1px) rotate(360deg);
+//     }
+// }

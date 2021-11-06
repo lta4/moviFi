@@ -1,4 +1,5 @@
 import "./App.css";
+// import "./App.scss";
 import "./Login.css";
 import "./Fav.css";
 import React from "react";
