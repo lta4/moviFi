@@ -34,7 +34,7 @@ html, body {
     line-height: 3em;
 }
 
-#username, #password{
+#username, #password {
     font-size: 19px;
     border: none;
     background-color: transparent;
