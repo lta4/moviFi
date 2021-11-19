@@ -4,427 +4,216 @@
   box-sizing: border-box;
   outline: 2px solid blue;
 } */
+
 html {
-  scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;
+  }
 
+/* body {
+     margin: 0;
+     overflow: hidden;
+} */
+
+.background {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background: #020202;
+}
+  
 .App {
-  text-align: center;
-  /* width: 100vw;
-  height: 100vh; */
-  color: white;
-  margin: 5px 10px;
+    text-align: center;
+    /* background-image: linear-gradient(to top,#F0F2F0, #000C40);
+    width: 100vw;
+    height: 100vh; */
+    color: white;
+    margin: 5px 10px;
 }
-
-/* .wrapper {
+  
+  /* .wrapper {
     padding: 20px;
   } */
-/************ BACKGROUND ******************/
+
+  /************ BACKGROUND ******************/
+
+/* $particleSize: 20vmin;
+$animationDuration: 6s;
+$amount: 20;
 .App span {
-  width: 20vmin;
-  height: 20vmin;
-  border-radius: 20vmin;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  position: absolute;
-  -webkit-animation-name: move;
-          animation-name: move;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.App span:nth-child(1) {
-  color: #f2fa80;
-  top: 93%;
-  left: 41%;
-  -webkit-animation-duration: 14.3s;
-          animation-duration: 14.3s;
-  -webkit-animation-delay: -11.6s;
-          animation-delay: -11.6s;
-  -webkit-transform-origin: -15vw -2vh;
-          transform-origin: -15vw -2vh;
-  -webkit-box-shadow: -40vmin 0 13.95356vmin currentColor;
-          box-shadow: -40vmin 0 13.95356vmin currentColor;
-}
-
-.App span:nth-child(2) {
-  color: #f5fadf;
-  top: 5%;
-  left: 41%;
-  -webkit-animation-duration: 10.2s;
-          animation-duration: 10.2s;
-  -webkit-animation-delay: -11.9s;
-          animation-delay: -11.9s;
-  -webkit-transform-origin: 25vw -20vh;
-          transform-origin: 25vw -20vh;
-  -webkit-box-shadow: -40vmin 0 7.25142vmin currentColor;
-          box-shadow: -40vmin 0 7.25142vmin currentColor;
-}
-
-.App span:nth-child(3) {
-  color: #f5fadf;
-  top: 35%;
-  left: 68%;
-  -webkit-animation-duration: 14.4s;
-          animation-duration: 14.4s;
-  -webkit-animation-delay: -8.1s;
-          animation-delay: -8.1s;
-  -webkit-transform-origin: -19vw 14vh;
-          transform-origin: -19vw 14vh;
-  -webkit-box-shadow: -40vmin 0 8.35364vmin currentColor;
-          box-shadow: -40vmin 0 8.35364vmin currentColor;
-}
-
-.App span:nth-child(4) {
-  color: #f2fa80;
-  top: 15%;
-  left: 29%;
-  -webkit-animation-duration: 10.6s;
-          animation-duration: 10.6s;
-  -webkit-animation-delay: -8.8s;
-          animation-delay: -8.8s;
-  -webkit-transform-origin: 19vw 14vh;
-          transform-origin: 19vw 14vh;
-  -webkit-box-shadow: 40vmin 0 11.1493vmin currentColor;
-          box-shadow: 40vmin 0 11.1493vmin currentColor;
-}
-
-.App span:nth-child(5) {
-  color: #f5fadf;
-  top: 66%;
-  left: 34%;
-  -webkit-animation-duration: 12.6s;
-          animation-duration: 12.6s;
-  -webkit-animation-delay: -15s;
-          animation-delay: -15s;
-  -webkit-transform-origin: 24vw -15vh;
-          transform-origin: 24vw -15vh;
-  -webkit-box-shadow: 40vmin 0 13.2429vmin currentColor;
-          box-shadow: 40vmin 0 13.2429vmin currentColor;
-}
-
-.App span:nth-child(6) {
-  color: #e9fc3f;
-  top: 28%;
-  left: 65%;
-  -webkit-animation-duration: 16s;
-          animation-duration: 16s;
-  -webkit-animation-delay: -4.3s;
-          animation-delay: -4.3s;
-  -webkit-transform-origin: 15vw 11vh;
-          transform-origin: 15vw 11vh;
-  -webkit-box-shadow: 40vmin 0 5.79408vmin currentColor;
-          box-shadow: 40vmin 0 5.79408vmin currentColor;
-}
-
-.App span:nth-child(7) {
-  color: #f5fadf;
-  top: 80%;
-  left: 66%;
-  -webkit-animation-duration: 12.3s;
-          animation-duration: 12.3s;
-  -webkit-animation-delay: -12.2s;
-          animation-delay: -12.2s;
-  -webkit-transform-origin: 4vw 10vh;
-          transform-origin: 4vw 10vh;
-  -webkit-box-shadow: -40vmin 0 7.6142vmin currentColor;
-          box-shadow: -40vmin 0 7.6142vmin currentColor;
-}
-
-.App span:nth-child(8) {
-  color: #f2fa80;
-  top: 47%;
-  left: 64%;
-  -webkit-animation-duration: 10.6s;
-          animation-duration: 10.6s;
-  -webkit-animation-delay: -6.1s;
-          animation-delay: -6.1s;
-  -webkit-transform-origin: -1vw -16vh;
-          transform-origin: -1vw -16vh;
-  -webkit-box-shadow: 40vmin 0 14.55283vmin currentColor;
-          box-shadow: 40vmin 0 14.55283vmin currentColor;
-}
-
-.App span:nth-child(9) {
-  color: #e9fc3f;
-  top: 92%;
-  left: 11%;
-  -webkit-animation-duration: 11.8s;
-          animation-duration: 11.8s;
-  -webkit-animation-delay: -3.6s;
-          animation-delay: -3.6s;
-  -webkit-transform-origin: -16vw 7vh;
-          transform-origin: -16vw 7vh;
-  -webkit-box-shadow: -40vmin 0 6.42417vmin currentColor;
-          box-shadow: -40vmin 0 6.42417vmin currentColor;
-}
-
-.App span:nth-child(10) {
-  color: #f2fa80;
-  top: 99%;
-  left: 45%;
-  -webkit-animation-duration: 14.9s;
-          animation-duration: 14.9s;
-  -webkit-animation-delay: -10.2s;
-          animation-delay: -10.2s;
-  -webkit-transform-origin: 25vw 7vh;
-          transform-origin: 25vw 7vh;
-  -webkit-box-shadow: 40vmin 0 13.98402vmin currentColor;
-          box-shadow: 40vmin 0 13.98402vmin currentColor;
-}
-
-.App span:nth-child(11) {
-  color: #e9fc3f;
-  top: 99%;
-  left: 43%;
-  -webkit-animation-duration: 15.1s;
-          animation-duration: 15.1s;
-  -webkit-animation-delay: -10.8s;
-          animation-delay: -10.8s;
-  -webkit-transform-origin: 3vw 6vh;
-          transform-origin: 3vw 6vh;
-  -webkit-box-shadow: -40vmin 0 12.56881vmin currentColor;
-          box-shadow: -40vmin 0 12.56881vmin currentColor;
-}
-
-.App span:nth-child(12) {
-  color: #e9fc3f;
-  top: 51%;
-  left: 11%;
-  -webkit-animation-duration: 13.6s;
-          animation-duration: 13.6s;
-  -webkit-animation-delay: -5.2s;
-          animation-delay: -5.2s;
-  -webkit-transform-origin: 12vw -21vh;
-          transform-origin: 12vw -21vh;
-  -webkit-box-shadow: 40vmin 0 6.47982vmin currentColor;
-          box-shadow: 40vmin 0 6.47982vmin currentColor;
-}
-
-.App span:nth-child(13) {
-  color: #f2fa80;
-  top: 16%;
-  left: 10%;
-  -webkit-animation-duration: 10.6s;
-          animation-duration: 10.6s;
-  -webkit-animation-delay: -6.4s;
-          animation-delay: -6.4s;
-  -webkit-transform-origin: 14vw 7vh;
-          transform-origin: 14vw 7vh;
-  -webkit-box-shadow: -40vmin 0 9.60941vmin currentColor;
-          box-shadow: -40vmin 0 9.60941vmin currentColor;
-}
-
-.App span:nth-child(14) {
-  color: #f2fa80;
-  top: 90%;
-  left: 76%;
-  -webkit-animation-duration: 16s;
-          animation-duration: 16s;
-  -webkit-animation-delay: -6.7s;
-          animation-delay: -6.7s;
-  -webkit-transform-origin: -14vw 0vh;
-          transform-origin: -14vw 0vh;
-  -webkit-box-shadow: -40vmin 0 9.99687vmin currentColor;
-          box-shadow: -40vmin 0 9.99687vmin currentColor;
-}
-
-.App span:nth-child(15) {
-  color: #f2fa80;
-  top: 74%;
-  left: 29%;
-  -webkit-animation-duration: 11.8s;
-          animation-duration: 11.8s;
-  -webkit-animation-delay: -4.1s;
-          animation-delay: -4.1s;
-  -webkit-transform-origin: -24vw -8vh;
-          transform-origin: -24vw -8vh;
-  -webkit-box-shadow: 40vmin 0 9.73228vmin currentColor;
-          box-shadow: 40vmin 0 9.73228vmin currentColor;
-}
-
-.App span:nth-child(16) {
-  color: #f2fa80;
-  top: 72%;
-  left: 97%;
-  -webkit-animation-duration: 10.2s;
-          animation-duration: 10.2s;
-  -webkit-animation-delay: -4.7s;
-          animation-delay: -4.7s;
-  -webkit-transform-origin: -2vw -16vh;
-          transform-origin: -2vw -16vh;
-  -webkit-box-shadow: -40vmin 0 10.45974vmin currentColor;
-          box-shadow: -40vmin 0 10.45974vmin currentColor;
-}
-
-.App span:nth-child(17) {
-  color: #e9fc3f;
-  top: 82%;
-  left: 35%;
-  -webkit-animation-duration: 15.9s;
-          animation-duration: 15.9s;
-  -webkit-animation-delay: -2.3s;
-          animation-delay: -2.3s;
-  -webkit-transform-origin: 21vw 21vh;
-          transform-origin: 21vw 21vh;
-  -webkit-box-shadow: 40vmin 0 10.85802vmin currentColor;
-          box-shadow: 40vmin 0 10.85802vmin currentColor;
-}
-
-.App span:nth-child(18) {
-  color: #f5fadf;
-  top: 25%;
-  left: 25%;
-  -webkit-animation-duration: 12.5s;
-          animation-duration: 12.5s;
-  -webkit-animation-delay: -14.2s;
-          animation-delay: -14.2s;
-  -webkit-transform-origin: 5vw -5vh;
-          transform-origin: 5vw -5vh;
-  -webkit-box-shadow: 40vmin 0 13.17041vmin currentColor;
-          box-shadow: 40vmin 0 13.17041vmin currentColor;
-}
-
-.App span:nth-child(19) {
-  color: #f5fadf;
-  top: 34%;
-  left: 61%;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-  -webkit-animation-delay: -3.1s;
-          animation-delay: -3.1s;
-  -webkit-transform-origin: -15vw 21vh;
-          transform-origin: -15vw 21vh;
-  -webkit-box-shadow: 40vmin 0 5.81968vmin currentColor;
-          box-shadow: 40vmin 0 5.81968vmin currentColor;
-}
-
-.App span:nth-child(20) {
-  color: #f2fa80;
-  top: 40%;
-  left: 24%;
-  -webkit-animation-duration: 11.9s;
-          animation-duration: 11.9s;
-  -webkit-animation-delay: -6.5s;
-          animation-delay: -6.5s;
-  -webkit-transform-origin: 0vw -9vh;
-          transform-origin: 0vw -9vh;
-  -webkit-box-shadow: 40vmin 0 7.42603vmin currentColor;
-          box-shadow: 40vmin 0 7.42603vmin currentColor;
-}
-
-@-webkit-keyframes move {
-  100% {
-    -webkit-transform: translate3d(0, 0, 1px) rotate(360deg);
-            transform: translate3d(0, 0, 1px) rotate(360deg);
+   width: $particleSize;
+   height: $particleSize;
+   border-radius: $particleSize;
+   backface-visibility: hidden; 
+   position: absolute;
+   animation-name: move;
+   animation-duration: $animationDuration;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   $colors: (
+        #f5fadf,
+        #e9fc3f,
+        #f2fa80,
+   );
+   @for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+      color: nth($colors, random(length($colors)));
+      top: random(100) * 1%;
+      left: random(100) * 1%;
+      animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+      $x: if(random() > 0.5, -1, 1);
+      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+    }
   }
 }
 
 @keyframes move {
-  100% {
-    -webkit-transform: translate3d(0, 0, 1px) rotate(360deg);
-            transform: translate3d(0, 0, 1px) rotate(360deg);
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+} */
+  
+  /*********** NAV *************/
+  
+  .navBar a {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    text-decoration: none;
+  }
+  
+  .title {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .favLink {
+    color: white;
+  }
+  
+  /********** FORM ******************/
+  
+  .formIntro {
+    margin: 40px 10px;
+  }
+  
+  .inputBar {
+    height: 20px;
+    width: 15em;
+    font-family: monospace;
+  }
+  
+  .submitButton {
+    height: 26px;
+  }
+  
+  /************ MOVIE DISPLAY ************/
+  
+  
+  
+  /* .movieTitle {
+    font-family: monospace;
+  } */
+  
+  .detailContainer {
+    /* box-sizing: border-box;
+    outline: 2px solid red; */
+  }
+  
+  .contactForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    row-gap: 4px;
+  }
+  
+  input#firstname, #lastname, #email {
+    padding: 5px 0 5px 0;
+    margin: 0 5px 0 5px;
+    font-family: monospace;
+  }
+  
+  textarea#message {
+    padding: 5px 0 40px 0;
+    margin: 0 5px 0 5px;
+  }
+  
+  button {
+    padding: 5px 0 5px 0;
+    margin: 0 5px 5px 5px;
+  }
+  
+  .footerBar {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .footer {
+    display: flex;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .copyRight {
+    color: black;
+    font-size: 8px;
+  }
+  
+  .footLink {
+    text-decoration: none;
+    color: #000C40;
+  }
+
+
+/* body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: #020202;
+}
+
+$particleSize: 20vmin;
+$animationDuration: 6s;
+$amount: 20;
+.background span {
+   width: $particleSize;
+   height: $particleSize;
+   border-radius: $particleSize;
+   backface-visibility: hidden; 
+   position: absolute;
+   animation-name: move;
+   animation-duration: $animationDuration;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   $colors: (
+        #f5fadf,
+        #e9fc3f,
+        #f2fa80,
+   );
+   @for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+      color: nth($colors, random(length($colors)));
+      top: random(100) * 1%;
+      left: random(100) * 1%;
+      animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+      $x: if(random() > 0.5, -1, 1);
+      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+    }
   }
 }
 
-/*********** NAV *************/
-.navBar a {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1 / 5;
-  text-decoration: none;
-}
-
-.title {
-  margin: 0;
-  color: white;
-  font-size: 40px;
-}
-
-.favLink {
-  color: white;
-}
-
-/********** FORM ******************/
-.formIntro {
-  margin: 40px 10px;
-}
-
-.inputBar {
-  height: 20px;
-  width: 15em;
-  font-family: monospace;
-}
-
-.submitButton {
-  height: 26px;
-}
-
-/************ MOVIE DISPLAY ************/
-/* .movieTitle {
-    font-family: monospace;
-  } */
-.detailContainer {
-  /* box-sizing: border-box;
-    outline: 2px solid red; */
-}
-
-.contactForm {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 6fr;
-      grid-template-rows: 6fr;
-  row-gap: 4px;
-}
-
-input#firstname, #lastname, #email {
-  padding: 5px 0 5px 0;
-  margin: 0 5px 0 5px;
-  font-family: monospace;
-}
-
-textarea#message {
-  padding: 5px 0 40px 0;
-  margin: 0 5px 0 5px;
-}
-
-button {
-  padding: 5px 0 5px 0;
-  margin: 0 5px 5px 5px;
-}
-
-.footerBar {
-  margin: 0;
-  color: white;
-  font-size: 30px;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 12px;
-  color: black;
-}
-
-.copyRight {
-  color: black;
-  font-size: 8px;
-}
-
-.footLink {
-  text-decoration: none;
-  color: #000C40;
-}
-/*# sourceMappingURL=App.css.map */
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+} */
